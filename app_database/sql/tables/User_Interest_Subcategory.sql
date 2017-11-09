@@ -1,0 +1,1 @@
+CREATE TABLE User_Interest_Subcategory ( user_id INTEGER NOT NULL, category VARCHAR NOT NULL, subcategory VARCHAR NOT NULL, preference VARCHAR NOT NULL, PRIMARY KEY ( user_id, category, subcategory ), FOREIGN KEY ( user_id ) REFERENCES User ON DELETE CASCADE, FOREIGN KEY ( category, subcategory ) REFERENCES Interest_Subcategory ON DELETE CASCADE );
