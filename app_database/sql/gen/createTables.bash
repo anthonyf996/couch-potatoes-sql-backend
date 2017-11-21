@@ -4,7 +4,7 @@ if [ $# != 1 ]
 then
 	echo "Usage: ( Database )"
 else
-	insertTables="./insertTables.sql"
+	createTables="./createTables.sql"
 
-	sqlite3 $1 < $insertTables
+	sqlite3 $1 < $createTables
 fi

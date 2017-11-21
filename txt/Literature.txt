@@ -1,0 +1,24 @@
+Absurdist/surreal/whimsical
+Action
+Adventure
+Comedy
+Crime
+Drama
+Fantasy
+Historical
+Historical fiction
+Horror
+Magical realism
+Mystery
+Paranoid
+Philosophical
+Political
+Romance
+Saga
+Satire
+Science fiction
+Slice of Life
+Speculative
+Thriller
+Urban
+Western

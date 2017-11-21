@@ -1,0 +1,22 @@
+Music, Alternative Music
+Music, Blues
+Music, Classical Music
+Music, Country Music
+Music, Dance Music
+Music, Easy Listening
+Music, Electronic Music
+Music, European Music (Folk  or  Pop)
+Music, Hip Hop  or  Rap
+Music, Indie Pop
+Music, Inspirational (incl. Gospel)
+Music, Asian Pop (J-Pop, K-pop)
+Music, Jazz
+Music, Latin Music
+Music, New Age
+Music, Opera
+Music, Pop (Popular music)
+Music, R&B  or  Soul
+Music, Reggae
+Music, Rock
+Music, Singer  or  Songwriter (inc. Folk)
+Music, World Music  or  Beats

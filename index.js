@@ -30,8 +30,13 @@ firebaseEnv.connect();
   console.log( 'Connected to Firebase database.' ) :
   console.log( 'Could not connect to Firebase database.' );
 
+
+//appEnv.updatePotentialDates( firebaseEnv.db, sqliteEnv.db, 'Test_Potential_Dates', '710895f16f4b4a5fa185ee462eccecc5', 30 );
+//appEnv.updatePotentialFriends( firebaseEnv.db, sqliteEnv.db, 'Test_Potential_Friends', '710895f16f4b4a5fa185ee462eccecc5', 30 );
+
 // Synchronize both databases
 appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
+
 
 // Check to initialize Firebase database
 /*

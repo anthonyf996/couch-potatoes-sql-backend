@@ -1,0 +1,41 @@
+Game, Action-adventure 
+Game, Adventuring 
+Game, Alternate reality 
+Game, Arcade 
+Game, Board 
+Game, Casual 
+Game, Computer 
+Game, Console 
+Game, Conversation 
+Game, Cooperative 
+Game, Daring 
+Game, Dice 
+Game, Drinking 
+Game, Educational 
+Game, Escape 
+Game, First person shooter 
+Game, Flash 
+Game, Guessing 
+Game, Handheld 
+Game, Medieval 
+Game, Mini
+Game, Mobile 
+Game, Multiplayer 
+Game, Multiplayer online battle arena 
+Game, Narrative 
+Game, Party 
+Game, Pencil-and-paper 
+Game, Platforming 
+Game, Pub 
+Game, Puzzles
+Game, Real-time strategy 
+Game, Role-playing 
+Game, Role-playing video 
+Game, Skill 
+Game, Sports 
+Game, Strategy 
+Game, Street 
+Game, Tabletop 
+Game, Third person shooter 
+Game, Video 
+Game, Wedding 

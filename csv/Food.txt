@@ -1,0 +1,166 @@
+Food, Afghan
+Food, African
+Food, Albanian
+Food, American
+Food, Arabian
+Food, Argentinian
+Food, Armenian
+Food, Asian Fusion
+Food, Australian
+Food, Austrian
+Food, Bagels
+Food, Bakery
+Food, Bangladeshi
+Food, Barbeque
+Food, Belgian
+Food, Brasseries
+Food, Brazilian
+Food, Breakfast
+Food, British
+Food, Brunch
+Food, Buffets
+Food, Burgers
+Food, Burmese
+Food, Cafes
+Food, Cafeteriafood hamburgers
+Food, Cajun
+Food, Californian
+Food, Calzones
+Food, Cambodian
+Food, Cantonese
+Food, Caribbean
+Food, Catalan
+Food, Cheesesteaks
+Food, Chicken
+Food, Chicken Wings
+Food, Chili
+Food, Chinese
+Food, Classic
+Food, Coffee and Tea
+Food, Colombian
+Food, Comfort Food
+Food, Costa Rican
+Food, Creole
+Food, Crepes
+Food, Cuban
+Food, Czech
+Food, Delis
+Food, Dessertindian food
+Food, Dim Sum
+Food, Diner
+Food, Dominican
+Food, Eclectic
+Food, Ecuadorian
+Food, Egyptian
+Food, El Salvadoran
+Food, Empanadas
+Food, English
+Food, Ethiopian
+Food, Fast Food
+Food, Filipino
+Food, Fine Dining
+Food, Fish & Chips
+Food, Fondue
+Food, Food Cart
+Food, Food Court
+Food, Food Stands
+Food, French
+Food, Fresh Fruits
+Food, Frozen Yogurt
+Food, Gastropubs
+Food, German
+Food, Gluten-Free
+Food, Greek
+Food, Grill
+Food, Guatemalan
+Food, Gyro
+Food, Haitian
+Food, Halalfood korean
+Food, Hawaiian
+Food, Himalayan
+Food, Hoagies
+Food, Hot Dogs
+Food, Hot Pot
+Food, Hungarian
+Food, Iberian
+Food, Ice Cream
+Food, Indian
+Food, Indonesian
+Food, Irish
+Food, Italian
+Food, Jamaican
+Food, Japanese
+Food, Kids
+Food, Korean
+Food, Kosher
+Food, Laotian
+Food, Late Night
+Food, Latin American
+Food, Lebanese
+Food, Live or Raw Food
+Food, Low Carb
+Food, Malaysian
+Food, Mandarin
+Food, Mediterranean
+Food, Mexican
+Food, Middle Eastern
+Food, Modern European
+Food, Mongolian
+Food, Moroccan
+Food, Nepalese
+Food, Noodles
+Food, Nouvelle cuisine
+Food, Nutritious
+Food, Organic
+Food, Pakistani
+Food, Pancakes
+Food, Pasta
+Food, Persian
+Food, Persian or Iranian
+Food, Peruvian
+Food, Pitas
+Food, Pizza
+Food, Polish
+Food, Portuguese
+Food, Potato
+Food, Poutineries
+Food, Pub Food
+Food, Puerto Rican
+Food, Ribs
+Food, Russian
+Food, Salad
+Food, Sandwiches
+Food, Scandinavian
+Food, Scottish
+Food, Seafood
+Food, Senegalese
+Food, Singaporean
+Food, Slovakian
+Food, Small Plates
+Food, Smoothies and Juices
+Food, Soul Food
+Food, Soup
+Food, South African
+Food, South American
+Food, Southern
+Food, Southwestern
+Food, Spanish
+Food, Sri Lankan
+Food, Steakhouses
+Food, Subs
+Food, Supper Clubs
+Food, Sushi Bars
+Food, Syrian
+Food, Szechwan
+Food, Taiwanese
+Food, Tapas
+Food, Tex-Mex
+Food, Thai
+Food, Tibetan
+Food, Turkish
+Food, Ukrainian
+Food, Uzbek
+Food, Vegan
+Food, Vegetarian
+Food, Vietnamese
+Food, Wraps

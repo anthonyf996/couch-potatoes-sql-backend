@@ -1,0 +1,9 @@
+INSERT INTO Interest VALUES ( 'Academia' );
+INSERT INTO Interest VALUES ( 'Food' );
+INSERT INTO Interest VALUES ( 'Game' );
+INSERT INTO Interest VALUES ( 'Literature' );
+INSERT INTO Interest VALUES ( 'Movie' );
+INSERT INTO Interest VALUES ( 'Music' );
+INSERT INTO Interest VALUES ( 'Recreation' );
+INSERT INTO Interest VALUES ( 'Sport' );
+INSERT INTO Interest VALUES ( 'TV' );

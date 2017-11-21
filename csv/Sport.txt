@@ -1,0 +1,53 @@
+Sport, Acro sports
+Sport, Air sports
+Sport, Aquatic & paddle sports
+Sport, Archery
+Sport, Ball-over-net games
+Sport, Basketball family
+Sport, Bat-and-ball (safe haven)
+Sport, Baton twirling
+Sport, Board sports
+Sport, Catch games
+Sport, Climbing
+Sport, Combat sports
+Sport, Cue sports
+Sport, Cycling
+Sport, Equine sports
+Sport, Fantasy sports
+Sport, Fishing
+Sport, Flying disc sports
+Sport, Football
+Sport, Golf
+Sport, Gymnastics
+Sport, Handball family
+Sport, Hockey
+Sport, Hunting
+Sport, Hurling and shinty
+Sport, Ice sports
+Sport, Kindred activities
+Sport, Kite sports
+Sport, Lacrosse
+Sport, Marker sports
+Sport, Martial Arts
+Sport, Mixed discipline
+Sport, Motorized sports
+Sport, Musical sports
+Sport, Orienteering family
+Sport, Other
+Sport, Overlapping sports
+Sport, Performance sports
+Sport, Pilota family
+Sport, Polo
+Sport, Racquet (or racket) sports
+Sport, Remote control
+Sport, Rodeo-originated
+Sport, Running
+Sport, Sailing
+Sport, Shooting sports
+Sport, Snow sports
+Sport, Stacking
+Sport, Street sports
+Sport, Tag games
+Sport, Walking
+Sport, Weightlifting
+Sport, Wrestling

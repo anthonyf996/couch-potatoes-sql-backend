@@ -1,0 +1,121 @@
+Academia, Accounting
+Academia, Afrikaans 
+Academia, Ancient History 
+Academia, Anthropology 
+Academia, Applied Art and Design 
+Academia, Applied Business 
+Academia, Applied ICT 
+Academia, Applied Science 
+Academia, Arabic 
+Academia, Archaeology 
+Academia, Art and Design 
+Academia, Bengali 
+Academia, Biblical Hebrew 
+Academia, Biology 
+Academia, Business 
+Academia, Business Studies 
+Academia, Chemistry 
+Academia, Chinese 
+Academia, Citizenship Studies 
+Academia, Classical Civilisation 
+Academia, Classical Greek 
+Academia, Classical Studies 
+Academia, Communication and Culture 
+Academia, Computer Science 
+Academia, Computing 
+Academia, Creative Writing 
+Academia, Critical Thinking 
+Academia, Dance 
+Academia, Design and Technology 
+Academia, Design and Textiles 
+Academia, Digital Media and Design 
+Academia, Digital Technology 
+Academia, Divinity 
+Academia, Drama 
+Academia, Drama and Theatre 
+Academia, Dutch 
+Academia, Economics 
+Academia, Economics and Business 
+Academia, Electronics 
+Academia, Engineering 
+Academia, English Language 
+Academia, English Language and Literature 
+Academia, English Literature 
+Academia, Environmental Science 
+Academia, Environmental Studies 
+Academia, Environmental Technology 
+Academia, Fashion and Textiles 
+Academia, Film Studies 
+Academia, Food Studies 
+Academia, Food Technology 
+Academia, French 
+Academia, Further Mathematics 
+Academia, General Studies 
+Academia, Geography 
+Academia, Geology 
+Academia, German 
+Academia, Global Development 
+Academia, Global Perspectives and Research 
+Academia, Government and Politics 
+Academia, Greek 
+Academia, Gujarati 
+Academia, Health and Social Care 
+Academia, Hindi 
+Academia, Hinduism 
+Academia, History 
+Academia, History of Art 
+Academia, Home Economics 
+Academia, Human Biology 
+Academia, Humanities 
+Academia, ICT 
+Academia, Information Technology 
+Academia, Irish 
+Academia, Islamic Studies 
+Academia, Italian 
+Academia, Japanese 
+Academia, Journalism 
+Academia, Latin 
+Academia, Law 
+Academia, Leisure Studies 
+Academia, Life and Health Sciences 
+Academia, Mathematics 
+Academia, Media Studies 
+Academia, Modern Hebrew 
+Academia, Modern Languages 
+Academia, Moving Image Arts 
+Academia, Music 
+Academia, Music Technology 
+Academia, Nutrition and Food Science 
+Academia, Panjabi 
+Academia, Performance Studies 
+Academia, Performing Arts 
+Academia, Persian 
+Academia, Philosophy 
+Academia, Physical Education 
+Academia, Physical Science 
+Academia, Physics 
+Academia, Polish 
+Academia, Politics 
+Academia, Portuguese 
+Academia, Product Design 
+Academia, Professional Business Services 
+Academia, Psychology 
+Academia, Pure Mathematics 
+Academia, Quantitative Methods 
+Academia, Religious Studies 
+Academia, Russian 
+Academia, Science in Society 
+Academia, Sociology 
+Academia, Software Systems Development 
+Academia, Spanish 
+Academia, Sports Science 
+Academia, Statistics 
+Academia, Systems and Control Technology 
+Academia, Tamil 
+Academia, Technology and Design 
+Academia, Thinking Skills 
+Academia, Travel and Tourism 
+Academia, Turkish 
+Academia, Urdu 
+Academia, Welsh 
+Academia, World Development 

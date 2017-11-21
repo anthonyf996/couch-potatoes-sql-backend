@@ -1,0 +1,24 @@
+Literature, Absurdist/surreal/whimsical
+Literature, Action
+Literature, Adventure
+Literature, Comedy
+Literature, Crime
+Literature, Drama
+Literature, Fantasy
+Literature, Historical
+Literature, Historical fiction
+Literature, Horror
+Literature, Magical realism
+Literature, Mystery
+Literature, Paranoid
+Literature, Philosophical
+Literature, Political
+Literature, Romance
+Literature, Saga
+Literature, Satire
+Literature, Science fiction
+Literature, Slice of Life
+Literature, Speculative
+Literature, Thriller
+Literature, Urban
+Literature, Western

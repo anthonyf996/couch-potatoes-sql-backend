@@ -1,0 +1,4 @@
+like
+dislike
+like to try
+not like to try

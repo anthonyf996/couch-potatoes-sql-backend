@@ -1,1 +1,1 @@
-CREATE TABLE Partner_Preference ( user_id INTEGER NOT NULL, min_age INTEGER NOT NULL, max_age INTEGER NOT NULL, PRIMARY KEY ( user_id ), FOREIGN KEY ( user_id ) REFERENCES User ON DELETE CASCADE );
+CREATE TABLE Partner_Preference ( user_id VARCHAR NOT NULL, min_age INTEGER NOT NULL, max_age INTEGER NOT NULL, PRIMARY KEY ( user_id ), FOREIGN KEY ( user_id ) REFERENCES User ON DELETE CASCADE );

@@ -1,0 +1,23 @@
+Recreation, Arts and crafts
+Recreation, Bicycling
+Recreation, Camping
+Recreation, Cooking
+Recreation, Dancing
+Recreation, Exercise
+Recreation, Fishing
+Recreation, Gardening
+Recreation, Hiking
+Recreation, Karaoke
+Recreation, Playing an instrument
+Recreation, Reading
+Recreation, Scuba diving
+Recreation, Shopping
+Recreation, Sightseeing
+Recreation, Singing
+Recreation, Spending time with friends
+Recreation, Swimming
+Recreation, Traveling
+Recreation, Walking
+Recreation, Watching movies
+Recreation, Writing
+Recreation, Yoga
