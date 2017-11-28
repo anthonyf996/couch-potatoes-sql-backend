@@ -6,6 +6,7 @@ var popPartnerPreference = require( './populatePartnerPreference' );
 var popUserAction = require( './populateUserAction' );
 var updatePotentDates = require( './updatePotentialDates' );
 var updatePotentFriends = require( './updatePotentialFriends' );
+var checkToCreateChat = require( './checkToCreateChat' );
 
 module.exports = {
   syncDB : function ( firebaseDB, sqliteDB ) {
@@ -154,10 +155,13 @@ module.exports = {
     firebaseDB.ref( 'Date' ).on( 'child_added', function ( snapshot ) {
       firebaseDB.ref( 'Date/' + snapshot.key ).on( 'child_added', function ( snapshot2 ) {
         sqlQuery( sqliteDB, 'INSERT INTO Date VALUES ( ?, ?, ? )', [ snapshot.key, snapshot2.key, snapshot2.val() ], "Date for User " + snapshot.key + " with User " + snapshot2.key + " inserted successfully on " + snapshot2.val() );
+
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot.key, queryLimit );
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot2.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot2.key, queryLimit );
+
+	checkToCreateChat( firebaseDB, 'Date/', snapshot.key, snapshot2.key );
       });
 
       firebaseDB.ref( 'Date/' + snapshot.key ).on( 'child_removed', function ( snapshot2 ) {
@@ -180,10 +184,13 @@ module.exports = {
     firebaseDB.ref( 'Befriend' ).on( 'child_added', function ( snapshot ) {
       firebaseDB.ref( 'Befriend/' + snapshot.key ).on( 'child_added', function ( snapshot2 ) {
         sqlQuery( sqliteDB, 'INSERT INTO Befriend VALUES ( ?, ?, ? )', [ snapshot.key, snapshot2.key, snapshot2.val() ], "Befriend for User " + snapshot.key + " with User " + snapshot2.key + " inserted successfully on " + snapshot2.val() );
+
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot.key, queryLimit );
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot2.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot2.key, queryLimit );
+
+	checkToCreateChat( firebaseDB, 'Befriend/', snapshot.key, snapshot2.key );
       });
 
       firebaseDB.ref( 'Befriend/' + snapshot.key ).on( 'child_removed', function ( snapshot2 ) {
@@ -206,6 +213,7 @@ module.exports = {
     firebaseDB.ref( 'Like' ).on( 'child_added', function ( snapshot ) {
       firebaseDB.ref( 'Like/' + snapshot.key ).on( 'child_added', function ( snapshot2 ) {
         sqlQuery( sqliteDB, 'INSERT INTO Like VALUES ( ?, ?, ? )', [ snapshot.key, snapshot2.key, snapshot2.val() ], "Like for User " + snapshot.key + " with User " + snapshot2.key + " inserted successfully on " + snapshot2.val() );
+
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot.key, queryLimit );
       });
@@ -310,5 +318,6 @@ module.exports = {
   populatePartnerPreference : popPartnerPreference,
   populateUserAction : popUserAction,
   updatePotentialDates : updatePotentDates,
-  updatePotentialFriends : updatePotentFriends
+  updatePotentialFriends : updatePotentFriends,
+  checkToCreateChat : checkToCreateChat
 };

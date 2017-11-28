@@ -37,6 +37,10 @@ firebaseEnv.connect();
 // Synchronize both databases
 appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
 
+//appEnv.checkToCreateChat( firebaseEnv.db, 'Like/', 'test', 'test2' );
+//appEnv.checkToCreateChat( firebaseEnv.db, 'Date/', 'test', 'test2' );
+//appEnv.checkToCreateChat( firebaseEnv.db, 'Befriend/', 'test', 'test2' );
+
 /*
     let sqlQuery = function ( sqliteDB, query, params, printStmt ) {
       sqliteDB.run( query, params, function ( err ) {
