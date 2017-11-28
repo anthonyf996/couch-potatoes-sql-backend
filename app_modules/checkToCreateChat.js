@@ -1,5 +1,7 @@
 'use strict';
 
+const notificationEnv = require( './notification_env' );
+
 module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
   let getDisplayName = ( firstName, middleName, lastName ) => {
     var str = "";
@@ -40,9 +42,9 @@ module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
 
           var user1DispName = getDisplayName( user1FName, user1MName, user1LName );
 
-          var user2FName = snapshot.val()[ 'firstName' ];
-          var user2MName = snapshot.val()[ 'middleName' ];
-          var user2LName = snapshot.val()[ 'lastName' ];
+          var user2FName = snapshot2.val()[ 'firstName' ];
+          var user2MName = snapshot2.val()[ 'middleName' ];
+          var user2LName = snapshot2.val()[ 'lastName' ];
 
           var user2DispName = getDisplayName( user2FName, user2MName, user2LName );
 
@@ -51,6 +53,20 @@ module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
 
           console.log( user1ID + ' adding to Chat_User with chatID ' + chatID + ' and displayName ' + user1DispName );
           console.log( user2ID + ' adding to Chat_User with chatID ' + chatID + ' and displayName ' + user2DispName );
+   
+          var timestamp = notificationEnv.getCurrTimestamp();
+
+          var matchType = '';
+
+	  if ( tablePath == "Date/" ) {
+            matchType = 'date';
+          }
+          else if ( tablePath == "Befriend/" ) {
+            matchType = 'friend';
+          }
+
+	  notificationEnv.addNotification( firebaseDB, user1ID, timestamp, "New " + matchType + " match with " + user2DispName + "! Click to begin chat." );
+	  notificationEnv.addNotification( firebaseDB, user2ID, timestamp, "New " + matchType + " match with " + user1DispName + "! Click to begin chat." );
         });
       });
     }

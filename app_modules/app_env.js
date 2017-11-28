@@ -7,6 +7,7 @@ var popUserAction = require( './populateUserAction' );
 var updatePotentDates = require( './updatePotentialDates' );
 var updatePotentFriends = require( './updatePotentialFriends' );
 var checkToCreateChat = require( './checkToCreateChat' );
+var addMessageNotificationListener = require( './addMessageNotificationListener' );
 
 module.exports = {
   syncDB : function ( firebaseDB, sqliteDB ) {
@@ -309,6 +310,9 @@ module.exports = {
       });
     });
 
+  },
+  addListeners : function ( firebaseDB ) {
+    addMessageNotificationListener( firebaseDB );
   },
   getRandInt : function ( low, high ) {
     return Math.floor( Math.random() * ( high - low + 1 ) + low );

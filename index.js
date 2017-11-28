@@ -35,26 +35,9 @@ firebaseEnv.connect();
 //appEnv.updatePotentialFriends( firebaseEnv.db, sqliteEnv.db, 'Test_Potential_Friends', '710895f16f4b4a5fa185ee462eccecc5', 30 );
 
 // Synchronize both databases
+appEnv.addListeners( firebaseEnv.db );
 appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
 
-//appEnv.checkToCreateChat( firebaseEnv.db, 'Like/', 'test', 'test2' );
-//appEnv.checkToCreateChat( firebaseEnv.db, 'Date/', 'test', 'test2' );
-//appEnv.checkToCreateChat( firebaseEnv.db, 'Befriend/', 'test', 'test2' );
-
-/*
-    let sqlQuery = function ( sqliteDB, query, params, printStmt ) {
-      sqliteDB.run( query, params, function ( err ) {
-        if ( err ) {
-          return console.error( err.message );
-        }
-        else if ( printStmt ) {
-          console.log( printStmt );
-        }
-      });
-    };
-
-  sqlQuery( sqliteEnv.db, "PRAGMA foreign_keys =  ON;", [], "DONE" );
-*/
 
 // Check to initialize Firebase database
 /*
