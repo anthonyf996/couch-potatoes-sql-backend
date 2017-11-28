@@ -37,6 +37,20 @@ firebaseEnv.connect();
 // Synchronize both databases
 appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
 
+/*
+    let sqlQuery = function ( sqliteDB, query, params, printStmt ) {
+      sqliteDB.run( query, params, function ( err ) {
+        if ( err ) {
+          return console.error( err.message );
+        }
+        else if ( printStmt ) {
+          console.log( printStmt );
+        }
+      });
+    };
+
+  sqlQuery( sqliteEnv.db, "PRAGMA foreign_keys =  ON;", [], "DONE" );
+*/
 
 // Check to initialize Firebase database
 /*

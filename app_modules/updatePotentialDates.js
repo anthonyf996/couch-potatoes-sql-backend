@@ -13,6 +13,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
 		  userID,
 		  userID,
 		  userID,
+		  userID,
 		  queryLimit
 		];
   var query = 
@@ -35,6 +36,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     " " +
     "	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON " +
     "	FROM User_Interest_Subcategory T3 " +
+    "   WHERE user_id <> ? " +
     ")  AS Res" +
     " " +
     // Apply filters

@@ -2,6 +2,8 @@
 
 var popUser = require( './populateUser' );
 var popUserInterest = require( './populateUserInterest' );
+var popPartnerPreference = require( './populatePartnerPreference' );
+var popUserAction = require( './populateUserAction' );
 var updatePotentDates = require( './updatePotentialDates' );
 var updatePotentFriends = require( './updatePotentialFriends' );
 
@@ -27,6 +29,8 @@ module.exports = {
         }
       });
     };
+
+    sqlQuery( sqliteDB, 'PRAGMA foreign_keys = ON;', [], 'Foreign Keys = ON' );
 
     firebaseDB.ref( 'User' ).on( 'child_added', function ( snapshot ) {
       sqlQuery( sqliteDB, 'INSERT INTO User VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )', [ snapshot.key, snapshot.val().birth_date, snapshot.val().gender, snapshot.val().city, snapshot.val().state, snapshot.val().country, snapshot.val().latitude, snapshot.val().longitude, snapshot.val().locked, snapshot.val().suspended ], "User " + snapshot.key + " inserted successfully." );
@@ -303,6 +307,8 @@ module.exports = {
   },
   populateUser : popUser,
   populateUserInterest : popUserInterest,
+  populatePartnerPreference : popPartnerPreference,
+  populateUserAction : popUserAction,
   updatePotentialDates : updatePotentDates,
   updatePotentialFriends : updatePotentFriends
 };

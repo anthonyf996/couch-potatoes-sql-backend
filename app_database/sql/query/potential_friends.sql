@@ -17,6 +17,7 @@ SELECT user_id, SUM( NUM_COMMON ) AS NUM_COMMON FROM (
 
 	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON
 	FROM User_Interest_Subcategory T3
+	WHERE user_id <> '710895f16f4b4a5fa185ee462eccecc5'
 ) 
 
 -- Apply filters
