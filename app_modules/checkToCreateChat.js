@@ -24,6 +24,10 @@ module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
   firebaseDB.ref( tablePath + user2ID + '/' + user1ID ).once( 'value', ( snapshot ) => {
     // Create new chat
     if ( snapshot != null && snapshot.val() != null )  {
+      firebaseDB.ref( tablePath + user1ID + '/' + user2ID ).child( 'chatCreated' ).once( 'value', ( snapshot5 ) => {
+      if ( snapshot5 != null && snapshot5.val() != null && snapshot5.val() == false ) {
+      firebaseDB.ref( tablePath + user1ID + '/' + user2ID ).child( 'chatCreated' ).set( true );
+
       // Get new chat ID
       var chatID = firebaseDB.ref( 'Chat_User' ).push().getKey();
 
@@ -69,6 +73,8 @@ module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
 	  notificationEnv.addNotification( firebaseDB, user2ID, timestamp, "New " + matchType + " match with " + user1DispName + "! Click to begin chat." );
         });
       });
+    }
+    });
     }
   });
 }

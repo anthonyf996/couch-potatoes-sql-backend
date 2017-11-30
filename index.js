@@ -5,6 +5,7 @@ const firebaseEnv = require( './app_modules/firebase_env' );
 const appEnv = require( './app_modules/app_env' );
 
 //const initAppDB = require( './init_app_db' );
+//const test = require( './app_modules/checkToCreateChat' );
 
 sqliteEnv.dbPath = 
 './app_database/app.db';
@@ -38,6 +39,7 @@ firebaseEnv.connect();
 appEnv.addListeners( firebaseEnv.db );
 appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
 
+//test( firebaseEnv.db, 'Date/', 'test', 'test2' );
 
 // Check to initialize Firebase database
 /*

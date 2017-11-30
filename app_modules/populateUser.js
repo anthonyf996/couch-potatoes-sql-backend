@@ -2,7 +2,7 @@
 
 module.exports = ( firebaseDB, destination, length, userID, email, firstName, 
 			middleName, lastName, birthDate, gender, city, state, 
-			country, bio, latitude, longitude, locked, suspended
+			country, bio, latitude, longitude, locked, suspended, profilePic
 			) => {
 	var obj = {};
 
@@ -24,9 +24,11 @@ module.exports = ( firebaseDB, destination, length, userID, email, firstName,
 			//'locked' : locked [ i ],
 			//'suspended' : suspended[ i ]
 			'locked' : false,
-			'suspended' : false
+			'suspended' : false,
+			'profile_pic' : profilePic[ i ]
 		};
-		obj[ userID[ i ] ] = obj2;
+		//obj[ userID[ i ] ] = obj2;
+		firebaseDB.ref( destination ).child( userID[i] ).set( obj2 );
 	}
-	firebaseDB.ref( destination ).set( obj );
+	//firebaseDB.ref( destination ).set( obj );
 }

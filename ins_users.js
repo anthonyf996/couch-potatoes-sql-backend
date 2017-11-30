@@ -43,7 +43,8 @@ var state = readFileToArray( randDataDir + 'state.csv' );
 var country = readFileToArray( randDataDir + 'country.csv' );
 var latitude = readFileToArray( randDataDir + 'latitude.csv' );
 var longitude = readFileToArray( randDataDir + 'longitude.csv' );
+var profilePic = readFileToArray( randDataDir + 'profilepics.csv' );
 
 appEnv.populateUser( firebaseEnv.db,  "User", 1000, userID, email, firstName, middleName,
 			lastName, birthDate, gender, city, state, country,
-			"Test BIO", latitude, longitude, false, false );
+			"Test BIO", latitude, longitude, false, false, profilePic );

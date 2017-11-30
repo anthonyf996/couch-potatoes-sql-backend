@@ -9,6 +9,7 @@ module.exports = ( firebaseDB ) => {
     if ( snapshot != null && snapshot.val() != null )  {
       firebaseDB.ref( 'Message/' + snapshot.key ).once( 'value', ( snapshot2 ) => {
         var sender = snapshot2.val()[ 'name' ];
+        var senderID = snapshot2.val()[ 'user_id' ];
 
         firebaseDB.ref( 'Chat_User/' + chatID ).once( 'value', ( snapshot3 ) => {
           var chatUsers = snapshot3.val();
@@ -16,7 +17,9 @@ module.exports = ( firebaseDB ) => {
           var timestamp = notiEnv.getCurrTimestamp();
 
           for ( var key in chatUsers ) {
-	    notiEnv.addNotification( firebaseDB, key, timestamp, "New message from " + sender + " on " + timestamp );
+            if ( key != senderID ) {
+	      notiEnv.addNotification( firebaseDB, key, timestamp, "New message from " + sender + " on " + timestamp );
+            }
           }
         });
       });
