@@ -18,7 +18,7 @@ Speculative
 Historical fiction
 Paranoid
 Horror
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Western
 Speculative
 Action
@@ -52,20 +52,20 @@ Slice of Life
 Fantasy
 Mystery
 Historical
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Science fiction
 Satire
 Magical realism
 Adventure
 Fantasy
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Romance
 Drama
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Fantasy
 Urban
 Fantasy
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Adventure
 Crime
 Western
@@ -80,10 +80,10 @@ Horror
 Adventure
 Historical
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Science fiction
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Philosophical
 Thriller
 Mystery
@@ -125,7 +125,7 @@ Comedy
 Horror
 Crime
 Historical fiction
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Western
 Philosophical
 Satire
@@ -167,7 +167,7 @@ Philosophical
 Comedy
 Action
 Satire
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Paranoid
 Mystery
 Thriller
@@ -194,257 +194,257 @@ Philosophical
 Historical
 Paranoid
 Mystery
-Paranoid
-Saga
-Paranoid
-Thriller
-Historical fiction
-Saga
-Horror
-Thriller
-Drama
-Adventure
-Adventure
-Science fiction
-Satire
-Historical
-Political
-Science fiction
-Comedy
-Philosophical
-Philosophical
-Thriller
-Science fiction
-Slice of Life
-Magical realism
-Thriller
-Paranoid
-Action
-Paranoid
-Adventure
-Historical fiction
-Saga
-Philosophical
-Paranoid
-Absurdist/surreal/whimsical
-Satire
-Magical realism
-Historical fiction
-Magical realism
-Mystery
-Urban
-Romance
-Drama
-Saga
-Action
-Western
-Western
-Saga
-Satire
-Science fiction
-Thriller
-Western
-Historical
-Saga
-Science fiction
-Satire
-Philosophical
-Historical
-Science fiction
-Satire
-Action
-Science fiction
-Magical realism
-Fantasy
-Western
-Adventure
-Western
-Horror
-Comedy
-Action
-Paranoid
-Action
-Historical fiction
-Satire
-Satire
-Magical realism
-Saga
-Historical fiction
-Adventure
-Adventure
-Slice of Life
-Western
-Action
-Adventure
-Historical
-Slice of Life
-Paranoid
-Thriller
-Science fiction
-Urban
-Fantasy
-Mystery
-Satire
-Historical fiction
-Satire
-Historical fiction
-Mystery
-Horror
-Satire
-Political
-Magical realism
-Drama
-Romance
-Slice of Life
-Political
-Absurdist/surreal/whimsical
-Thriller
-Western
-Historical fiction
-Western
-Action
-Comedy
-Political
-Science fiction
-Urban
-Urban
-Drama
-Magical realism
-Mystery
-Absurdist/surreal/whimsical
-Absurdist/surreal/whimsical
-Satire
-Comedy
-Horror
-Adventure
-Philosophical
-Satire
-Drama
-Urban
-Magical realism
-Slice of Life
-Historical fiction
-Historical
-Adventure
-Slice of Life
-Urban
-Adventure
-Saga
-Thriller
-Adventure
-Historical
-Political
-Urban
-Political
-Historical fiction
-Speculative
-Crime
-Philosophical
-Urban
-Romance
-Drama
-Urban
-Absurdist/surreal/whimsical
-Horror
-Historical fiction
-Science fiction
-Urban
-Action
-Western
-Paranoid
-Crime
-Magical realism
-Paranoid
-Mystery
-Crime
-Historical fiction
-Action
-Urban
-Saga
-Political
-Satire
-Absurdist/surreal/whimsical
-Crime
-Romance
-Fantasy
-Crime
-Mystery
-Magical realism
-Science fiction
-Horror
-Action
-Western
-Historical
-Satire
-Absurdist/surreal/whimsical
-Historical
-Crime
-Political
-Horror
-Slice of Life
-Adventure
-Philosophical
-Fantasy
-Romance
-Saga
-Adventure
-Western
-Magical realism
-Satire
-Historical
-Absurdist/surreal/whimsical
-Magical realism
-Western
-Thriller
-Action
-Drama
-Action
-Crime
-Romance
-Mystery
-Philosophical
-Historical fiction
-Comedy
-Paranoid
-Adventure
-Comedy
-Speculative
-Fantasy
-Magical realism
-Thriller
-Action
-Paranoid
-Magical realism
-Western
-Comedy
-Science fiction
-Science fiction
-Science fiction
-Crime
-Mystery
-Science fiction
-Thriller
-Philosophical
-Satire
-Science fiction
-Fantasy
-Western
-Mystery
-Magical realism
-Political
-Western
-Romance
-Western
-Science fiction
-Comedy
-Satire
-Philosophical
-Romance
-Romance
-Western
 Paranoid
 Saga
 Paranoid
+Thriller
+Historical fiction
+Saga
+Horror
+Thriller
+Drama
+Adventure
+Adventure
+Science fiction
+Satire
+Historical
+Political
+Science fiction
+Comedy
+Philosophical
+Philosophical
+Thriller
+Science fiction
+Slice of Life
+Magical realism
+Thriller
+Paranoid
+Action
+Paranoid
+Adventure
+Historical fiction
+Saga
+Philosophical
+Paranoid
+Absurdist-surreal-whimsical
+Satire
+Magical realism
+Historical fiction
+Magical realism
+Mystery
+Urban
+Romance
+Drama
+Saga
+Action
+Western
+Western
+Saga
+Satire
+Science fiction
+Thriller
+Western
+Historical
+Saga
+Science fiction
+Satire
+Philosophical
+Historical
+Science fiction
+Satire
+Action
+Science fiction
+Magical realism
+Fantasy
+Western
+Adventure
+Western
+Horror
+Comedy
+Action
+Paranoid
+Action
+Historical fiction
+Satire
+Satire
+Magical realism
+Saga
+Historical fiction
+Adventure
+Adventure
+Slice of Life
+Western
+Action
+Adventure
+Historical
+Slice of Life
+Paranoid
+Thriller
+Science fiction
+Urban
+Fantasy
+Mystery
+Satire
+Historical fiction
+Satire
+Historical fiction
+Mystery
+Horror
+Satire
+Political
+Magical realism
+Drama
+Romance
+Slice of Life
+Political
+Absurdist-surreal-whimsical
+Thriller
+Western
+Historical fiction
+Western
+Action
+Comedy
+Political
+Science fiction
+Urban
+Urban
+Drama
+Magical realism
+Mystery
+Absurdist-surreal-whimsical
+Absurdist-surreal-whimsical
+Satire
+Comedy
+Horror
+Adventure
+Philosophical
+Satire
+Drama
+Urban
+Magical realism
+Slice of Life
+Historical fiction
+Historical
+Adventure
+Slice of Life
+Urban
+Adventure
+Saga
+Thriller
+Adventure
+Historical
+Political
+Urban
+Political
+Historical fiction
+Speculative
+Crime
+Philosophical
+Urban
+Romance
+Drama
+Urban
+Absurdist-surreal-whimsical
+Horror
+Historical fiction
+Science fiction
+Urban
+Action
+Western
+Paranoid
+Crime
+Magical realism
+Paranoid
+Mystery
+Crime
+Historical fiction
+Action
+Urban
+Saga
+Political
+Satire
+Absurdist-surreal-whimsical
+Crime
+Romance
+Fantasy
+Crime
+Mystery
+Magical realism
+Science fiction
+Horror
+Action
+Western
+Historical
+Satire
+Absurdist-surreal-whimsical
+Historical
+Crime
+Political
+Horror
+Slice of Life
+Adventure
+Philosophical
+Fantasy
+Romance
+Saga
+Adventure
+Western
+Magical realism
+Satire
+Historical
+Absurdist-surreal-whimsical
+Magical realism
+Western
+Thriller
+Action
+Drama
+Action
+Crime
+Romance
+Mystery
+Philosophical
+Historical fiction
+Comedy
+Paranoid
+Adventure
+Comedy
+Speculative
+Fantasy
+Magical realism
+Thriller
+Action
+Paranoid
+Magical realism
+Western
+Comedy
+Science fiction
+Science fiction
+Science fiction
+Crime
+Mystery
+Science fiction
+Thriller
+Philosophical
+Satire
+Science fiction
+Fantasy
+Western
+Mystery
+Magical realism
+Political
+Western
+Romance
+Western
+Science fiction
+Comedy
+Satire
+Philosophical
+Romance
+Romance
+Western
+Paranoid
+Saga
+Paranoid
 Political
 Historical fiction
 Historical
@@ -460,7 +460,7 @@ Drama
 Speculative
 Saga
 Speculative
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Adventure
 Mystery
 Western
@@ -479,13 +479,13 @@ Magical realism
 Romance
 Adventure
 Horror
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Paranoid
 Slice of Life
 Drama
 Horror
 Historical
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Slice of Life
 Drama
 Speculative
@@ -512,7 +512,7 @@ Saga
 Crime
 Fantasy
 Drama
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Crime
 Political
 Western
@@ -540,14 +540,14 @@ Crime
 Crime
 Action
 Paranoid
-Absurdist/surreal/whimsical
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
+Absurdist-surreal-whimsical
 Satire
 Saga
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Historical fiction
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Science fiction
 Crime
 Historical fiction
@@ -561,7 +561,7 @@ Crime
 Urban
 Mystery
 Saga
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Comedy
 Speculative
 Fantasy
@@ -571,12 +571,12 @@ Magical realism
 Historical fiction
 Historical fiction
 Western
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Historical fiction
 Historical fiction
 Horror
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Satire
 Speculative
 Science fiction
@@ -588,7 +588,7 @@ Adventure
 Speculative
 Drama
 Saga
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Slice of Life
 Comedy
 Horror
@@ -626,19 +626,19 @@ Western
 Urban
 Saga
 Speculative
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Science fiction
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Crime
 Thriller
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Saga
 Satire
 Crime
 Speculative
 Slice of Life
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Horror
 Action
 Historical
@@ -661,7 +661,7 @@ Fantasy
 Mystery
 Historical
 Adventure
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Comedy
 Adventure
 Historical fiction
@@ -686,9 +686,9 @@ Paranoid
 Historical
 Speculative
 Adventure
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Comedy
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Comedy
 Adventure
 Comedy
@@ -705,8 +705,8 @@ Urban
 Mystery
 Action
 Romance
-Absurdist/surreal/whimsical
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
+Absurdist-surreal-whimsical
 Urban
 Western
 Drama
@@ -773,7 +773,7 @@ Science fiction
 Political
 Romance
 Science fiction
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Romance
 Magical realism
 Urban
@@ -803,7 +803,7 @@ Action
 Fantasy
 Mystery
 Historical fiction
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Mystery
 Romance
 Comedy
@@ -812,12 +812,12 @@ Saga
 Romance
 Science fiction
 Adventure
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Crime
 Slice of Life
 Slice of Life
 Mystery
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Slice of Life
 Romance
 Science fiction
@@ -868,7 +868,7 @@ Western
 Horror
 Western
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Action
 Adventure
 Urban
@@ -887,7 +887,7 @@ Horror
 Magical realism
 Science fiction
 Historical
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Drama
 Comedy
 Mystery
@@ -902,7 +902,7 @@ Saga
 Magical realism
 Magical realism
 Magical realism
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Historical
 Crime
 Philosophical
@@ -914,10 +914,10 @@ Historical
 Western
 Slice of Life
 Mystery
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Drama
 Drama
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Drama
 Comedy
 Comedy
@@ -934,7 +934,7 @@ Urban
 Action
 Fantasy
 Urban
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Adventure
 Mystery
 Paranoid
@@ -993,7 +993,7 @@ Science fiction
 Action
 Horror
 Crime
-Absurdist/surreal/whimsical
+Absurdist-surreal-whimsical
 Historical fiction
 Paranoid
 Saga

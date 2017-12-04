@@ -312,7 +312,7 @@ module.exports = {
 
   },
   addListeners : function ( firebaseDB ) {
-    addMessageNotificationListener( firebaseDB );
+    //addMessageNotificationListener( firebaseDB );
   },
   getRandInt : function ( low, high ) {
     return Math.floor( Math.random() * ( high - low + 1 ) + low );
