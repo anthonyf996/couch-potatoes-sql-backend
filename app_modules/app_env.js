@@ -8,6 +8,7 @@ var updatePotentDates = require( './updatePotentialDates' );
 var updatePotentFriends = require( './updatePotentialFriends' );
 var checkToCreateChat = require( './checkToCreateChat' );
 var addMessageNotificationListener = require( './addMessageNotificationListener' );
+var getPotatoQ = require( './getPotatoQuestion' );
 
 module.exports = {
   syncDB : function ( firebaseDB, sqliteDB ) {
@@ -58,8 +59,10 @@ module.exports = {
       }
     });
 */
+// TEMPORARY TODO REMOVE DEFAULT MIN AND MAX AGE LATER
     firebaseDB.ref( 'Partner_Preference' ).on( 'child_added', function ( snapshot ) {
-      sqlQuery( sqliteDB, 'INSERT INTO Partner_Preference VALUES ( ?, ?, ? )', [ snapshot.key, snapshot.val().min_age, snapshot.val().max_age ], "Partner_Preference for User " + snapshot.key + " inserted successfully." );
+      //sqlQuery( sqliteDB, 'INSERT INTO Partner_Preference VALUES ( ?, ?, ? )', [ snapshot.key, snapshot.val().min_age, snapshot.val().max_age ], "Partner_Preference for User " + snapshot.key + " inserted successfully." );
+      sqlQuery( sqliteDB, 'INSERT INTO Partner_Preference VALUES ( ?, ?, ? )', [ snapshot.key, 18, 200 ], "Partner_Preference for User " + snapshot.key + " inserted successfully." );
         updatePotentDates( firebaseDB, sqliteDB, 'User_Potential_Date/', snapshot.key, queryLimit );
         updatePotentFriends( firebaseDB, sqliteDB, 'User_Potential_Friend/', snapshot.key, queryLimit );
 
@@ -323,5 +326,6 @@ module.exports = {
   populateUserAction : popUserAction,
   updatePotentialDates : updatePotentDates,
   updatePotentialFriends : updatePotentFriends,
-  checkToCreateChat : checkToCreateChat
+  checkToCreateChat : checkToCreateChat,
+  getPotatoQuestion : getPotatoQ
 };

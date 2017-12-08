@@ -1,6 +1,7 @@
 'use strict';
 
 const notificationEnv = require( './notification_env' );
+const getPotatoQ = require( './getPotatoQuestion' );
 
 module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
   let getDisplayName = ( firstName, middleName, lastName ) => {
@@ -54,6 +55,9 @@ module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
 
           firebaseDB.ref( 'Chat_User/' + chatID ).child( user1ID ).set( user1DispName );
           firebaseDB.ref( 'Chat_User/' + chatID ).child( user2ID ).set( user2DispName );
+
+          // Add potato question
+          getPotatoQ( firebaseDB, chatID );
 
           console.log( user1ID + ' adding to Chat_User with chatID ' + chatID + ' and displayName ' + user1DispName );
           console.log( user2ID + ' adding to Chat_User with chatID ' + chatID + ' and displayName ' + user2DispName );

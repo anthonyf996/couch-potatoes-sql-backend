@@ -8,16 +8,16 @@ SELECT user_id, SUM( NUM_COMMON ) AS NUM_COMMON FROM (
 		FROM User_Interest_Subcategory T2
 		WHERE 
 		T2.category = T1.category AND T2.subcategory = T1.subcategory AND
-		T2.preference = T1.preference AND user_id = '710895f16f4b4a5fa185ee462eccecc5'
-	) AND user_id <> '710895f16f4b4a5fa185ee462eccecc5'
+		T2.preference = T1.preference AND user_id = 'test'
+	) AND user_id <> 'test'
 
 	GROUP BY user_id
 
 	UNION ALL
 
 	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON
-	FROM User_Interest_Subcategory T3
-	WHERE user_id <> '710895f16f4b4a5fa185ee462eccecc5'
+	FROM User T3
+	WHERE user_id <> 'test'
 ) 
 
 -- Apply filters
@@ -25,28 +25,28 @@ WHERE user_id NOT IN
 (
 
 	SELECT user2_id FROM Block
-	WHERE user1_id = '710895f16f4b4a5fa185ee462eccecc5'
+	WHERE user1_id = 'test'
 )
 AND user_id NOT IN
 
 -- Report filter
 (
 	SELECT user2_id FROM Report
-	WHERE user1_id = '710895f16f4b4a5fa185ee462eccecc5'
+	WHERE user1_id = 'test'
 )
 AND user_id NOT IN
 
 -- Date filter
 (
 	SELECT user2_id FROM Date
-	WHERE user1_id = '710895f16f4b4a5fa185ee462eccecc5'
+	WHERE user1_id = 'test'
 )
 AND user_id NOT IN
 
 -- Befriend filter
 (
 	SELECT user2_id FROM Befriend
-	WHERE user1_id = '710895f16f4b4a5fa185ee462eccecc5'
+	WHERE user1_id = 'test'
 )
 
 GROUP BY user_id ORDER BY NUM_COMMON DESC

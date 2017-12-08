@@ -1,6 +1,7 @@
 'use strict';
 
-module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
+module.exports = ( firebaseDB, sqlDB, destination, userID ) => {
+  var queryLimit = 30;
   var params = 	[ 
 		  userID,
 		  userID,
@@ -32,7 +33,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     "	UNION ALL " +
     " " +
     "	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON " +
-    "	FROM User_Interest_Subcategory T3 " +
+    "	FROM User T3 " +
     "   WHERE user_id <> ? " +
     ")  AS Res" +
     " " +

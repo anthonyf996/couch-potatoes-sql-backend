@@ -1,6 +1,7 @@
 'use strict';
 
-module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
+module.exports = ( firebaseDB, sqlDB, destination, userID ) => {
+  var queryLimit = 30;
   var params = 	[ 
 		  userID,
 		  userID,
@@ -12,8 +13,8 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
 		  userID,
 		  userID,
 		  userID,
-		  userID,
-		  userID,
+		  //userID, UNCOMMENT LATER IF USING AGE FILTER
+		  //userID,
 		  queryLimit
 		];
   var query = 
@@ -35,7 +36,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     "	UNION ALL " +
     " " +
     "	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON " +
-    "	FROM User_Interest_Subcategory T3 " +
+    "	FROM User T3 " +
     "   WHERE user_id <> ? " +
     ")  AS Res" +
     " " +
@@ -43,6 +44,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     "WHERE Res.user_id IN  " +
     " " +
     // Age filter
+/*  DO NOT USE AGE FILTER UNTIL USERS CAN ENTER MIN_AGE AND MAX_AGE IN SETTINGS
     "( " +
     "  SELECT T4.user_id FROM User_Age T4 WHERE  " +
     "	T4.age < ( SELECT T5.max_age FROM Partner_Preference T5 " +
@@ -53,6 +55,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     ") " +
     "AND Res.user_id IN " +
     " " +
+*/
     // Gender filter
     "( " +
     "  SELECT T7.user_id FROM User T7 WHERE T7.gender IN ( " +
