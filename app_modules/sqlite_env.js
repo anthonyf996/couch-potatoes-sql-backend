@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 module.exports = {
   //dbPath : null,
-  //db : null,
+  db : null,
   connect : function ( dbPath ) {
     this.db = new sqlite3.Database( dbPath, (err) => {
       if ( err ) {

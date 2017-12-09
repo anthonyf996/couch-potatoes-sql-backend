@@ -1,7 +1,7 @@
 'use strict';
 
-var notiEnv = require( './notification_env' );
-var readFileToArray = require( './readFileToArray' );
+var notiEnv = require( '../notification/notification_env' );
+var readFileToArray = require( '../readFileToArray' );
 
 module.exports = ( firebaseDB, chatID ) => {
   // Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
@@ -13,7 +13,7 @@ module.exports = ( firebaseDB, chatID ) => {
 
   var messageID = firebaseDB.ref( 'Message' ).push().getKey();
 
-  var txtFileDir = "./txt/"; // NOTE: Change to '../' when adding to app_env.js
+  var txtFileDir = "../../txt/"; // NOTE: Change to '../' when adding to app_env.js
   var potatoQuestionsFile = "PotatoQuestions.txt";
 
   var questions = readFileToArray( txtFileDir + potatoQuestionsFile );

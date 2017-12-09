@@ -7,7 +7,8 @@ const appEnv = require( './app_modules/app_env' );
 //const initAppDB = require( './init_app_db' );
 //const test = require( './app_modules/checkToCreateChat' );
 
-sqliteEnv.dbPath = 
+//sqliteEnv.dbPath = 
+var dbPath =
 './app_database/app.db';
 firebaseEnv.cred = 
 '../../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
@@ -18,7 +19,7 @@ const prepopulateDB = true;
 const verbose = true;
 
 // Connect to SQL database
-sqliteEnv.connect();
+sqliteEnv.connect( dbPath );
 
 ( verbose && sqliteEnv.db ) ?
   console.log( 'Connected to database "' + sqliteEnv.dbPath + '".' ) :
@@ -36,8 +37,8 @@ firebaseEnv.connect();
 //appEnv.updatePotentialFriends( firebaseEnv.db, sqliteEnv.db, 'Test_Potential_Friends', '710895f16f4b4a5fa185ee462eccecc5', 30 );
 
 // Synchronize both databases
-appEnv.addListeners( firebaseEnv.db );
-appEnv.syncDB( firebaseEnv.db, sqliteEnv.db );
+//appEnv.addListeners( firebaseEnv.db );
+appEnv.syncDB( firebaseEnv.db, sqliteEnv );
 
 //test( firebaseEnv.db, 'Date/', 'test', 'test2' );
 

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = ( firebaseDB, sqlDB, destination, userID ) => {
+module.exports = ( firebaseDB, sqliteEnv, destination, userID ) => {
   var queryLimit = 30;
   var params = 	[ 
 		  userID,
@@ -84,7 +84,7 @@ module.exports = ( firebaseDB, sqlDB, destination, userID ) => {
     "GROUP BY Res.user_id ORDER BY NUM_COMMON DESC " +
     "LIMIT ?; "
 
-  sqlDB.all( query, params, function ( err, rows ) {
+  sqliteEnv.db.all( query, params, function ( err, rows ) {
     if ( err ) {
       throw err;
     }

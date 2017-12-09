@@ -1,11 +1,15 @@
 'use strict';
 
-module.exports = ( firebaseDB, sqliteDB ) => {
+var potentMatchDir = '../potential_matches/';
+var updatePotentDates = require( potentMatchDir + 'updatePotentialDates' );
+var updatePotentFriends = require( potentMatchDir + 'updatePotentialFriends' );
+
+module.exports = ( firebaseDB, sqliteEnv ) => {
     firebaseDB.ref( 'Interest' ).on( 'child_added', function ( snapshot ) {
-      sqlQuery( sqliteDB, 'INSERT INTO Interest VALUES ( ? )', [ snapshot.val() ], "Interest " + snapshot.val() + " inserted successfully." );
+      sqliteEnv.sqlQuery( 'INSERT INTO Interest VALUES ( ? )', [ snapshot.val() ], "Interest " + snapshot.val() + " inserted successfully." );
     });
 
     firebaseDB.ref( 'Interest' ).on( 'child_removed', function ( snapshot ) {
-      sqlQuery( sqliteDB, 'DELETE FROM Interest WHERE category = ?', [ snapshot.val() ], "Interest " + snapshot.val() + " deleted successfully." );
+      sqliteEnv.sqlQuery( 'DELETE FROM Interest WHERE category = ?', [ snapshot.val() ], "Interest " + snapshot.val() + " deleted successfully." );
     });
 };

@@ -1,7 +1,7 @@
 'use strict';
 
-const notificationEnv = require( './notification_env' );
-const getPotatoQ = require( './getPotatoQuestion' );
+const notificationEnv = require( '../notification/notification_env' );
+const getPotatoQ = require( '../potato_questions/getPotatoQuestion' );
 
 module.exports = ( firebaseDB, tablePath, user1ID, user2ID ) => {
   let getDisplayName = ( firstName, middleName, lastName ) => {

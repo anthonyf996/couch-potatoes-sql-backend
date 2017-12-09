@@ -12,7 +12,7 @@ var addDislikeListeners = require( './addDislikeListeners' );
 var addBlockListeners = require( './addBlockListeners' );
 var addReportListeners = require( './addReportListeners' );
 
-module.exports = ( firebaseDB, sqliteDB ) => {
+module.exports = ( firebaseDB, sqliteEnv ) => {
 /*
     let queryLimit = 30;
 
@@ -31,36 +31,35 @@ module.exports = ( firebaseDB, sqliteDB ) => {
 */
 
     // Add User listeners
-    addUserListeners( firebaseDB, sqliteDB );
+    addUserListeners( firebaseDB, sqliteEnv );
 
     // Add Partner_Preference listeners
-    addPartnerPrefListeners( firebaseDB, sqliteDB );
+    addPartnerPrefListeners( firebaseDB, sqliteEnv );
 
     // Add Interest listeners
-    addInterestListeners( firebaseDB, sqliteDB );
+    addInterestListeners( firebaseDB, sqliteEnv );
 
     // Add Interest_Subcategory listeners
-    addInterestSubcategoryListeners( firebaseDB, sqliteDB );
+    addInterestSubcategoryListeners( firebaseDB, sqliteEnv );
 
     // Add User_Interest listeners
-    addUserInterestListeners( firebaseDB, sqliteDB );
+    addUserInterestListeners( firebaseDB, sqliteEnv );
 
     // Add Date listeners
-    addDateListeners( firebaseDB, sqliteDB );
+    addDateListeners( firebaseDB, sqliteEnv );
 
     // Add Befriend listeners
-    addBefriendListeners( firebaseDB, sqliteDB );
+    addBefriendListeners( firebaseDB, sqliteEnv );
 
     // Add Like listeners
-    addLikeListeners( firebaseDB, sqliteDB );
+    addLikeListeners( firebaseDB, sqliteEnv );
 
     // Add Dislike listeners
-    addDislikeListeners( firebaseDB, sqliteDB );
+    addDislikeListeners( firebaseDB, sqliteEnv );
 
     // Add Block listeners
-    addBlockListeners( firebaseDB, sqliteDB );
+    addBlockListeners( firebaseDB, sqliteEnv );
 
     // Add Report listeners
-    addReportListeners( firebaseDB, sqliteDB );
-  }
+    addReportListeners( firebaseDB, sqliteEnv );
 };
