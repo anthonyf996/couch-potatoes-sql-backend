@@ -1,14 +1,16 @@
 'use strict';
 
-const sqliteEnv = require( './app_modules/sqlite_env' );
-const firebaseEnv = require( './app_modules/firebase_env' );
-const appEnv = require( './app_modules/app_env' );
-const readFileToArray = require( './app_modules/readFileToArray' );
+var homeDir = '../';
+
+const sqliteEnv = require( homeDir + 'app_modules/sqlite_env' );
+const firebaseEnv = require( homeDir + 'app_modules/firebase_env' );
+const appEnv = require( homeDir + 'app_modules/app_env' );
+const readFileToArray = require( homeDir + 'app_modules/readFileToArray' );
 
 sqliteEnv.dbPath = 
-'./app_database/app.db';
+homeDir + 'app_database/app.db';
 firebaseEnv.cred = 
-'../../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
+homeDir + '../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
 firebaseEnv.url = 
 'https://couch-potatoes-47758.firebaseio.com';
 
@@ -29,7 +31,7 @@ firebaseEnv.connect();
   console.log( 'Connected to Firebase database.' ) :
   console.log( 'Could not connect to Firebase database.' );
 
-var randDataDir = './random_data/';
+var randDataDir = '../random_data/';
 
 var date_user1_id = readFileToArray( randDataDir + 'user_action/date/user1_id.csv' );
 var date_user2_id = readFileToArray( randDataDir + 'user_action/date/user2_id.csv' );

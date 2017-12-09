@@ -1,13 +1,15 @@
 'use strict';
 
-const sqliteEnv = require( './app_modules/sqlite_env' );
-const firebaseEnv = require( './app_modules/firebase_env' );
-const appEnv = require( './app_modules/app_env' );
+var homeDir = '../';
+
+const sqliteEnv = require( homeDir + 'app_modules/sqlite_env' );
+const firebaseEnv = require( homeDir + 'app_modules/firebase_env' );
+const appEnv = require( homeDir + 'app_modules/app_env' );
 
 sqliteEnv.dbPath = 
-'./app_database/app.db';
+homeDir + 'app_database/app.db';
 firebaseEnv.cred = 
-'../../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
+homeDir + '../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
 firebaseEnv.url = 
 'https://couch-potatoes-47758.firebaseio.com';
 
@@ -29,19 +31,19 @@ firebaseEnv.connect();
   console.log( 'Could not connect to Firebase database.' );
 
 
-var readFileToArray = require( './app_modules/readFileToArray' );
+var readFileToArray = require( '../app_modules/readFileToArray' );
 
-var academiaPath = './txt/Academia.txt';
-var gamePath = './txt/Game.txt';
-var foodPath = './txt/Food.txt';
-var literaturePath = './txt/Literature.txt';
-var recreationPath = './txt/Recreation.txt';
-var moviePath = './txt/Movie.txt';
-var musicPath = './txt/Music.txt';
-var sportPath = './txt/Sport.txt';
-var tvPath = './txt/TV.txt';
+var academiaPath = '../txt/Academia.txt';
+var gamePath = '../txt/Game.txt';
+var foodPath = '../txt/Food.txt';
+var literaturePath = '../txt/Literature.txt';
+var recreationPath = '../txt/Recreation.txt';
+var moviePath = '../txt/Movie.txt';
+var musicPath = '../txt/Music.txt';
+var sportPath = '../txt/Sport.txt';
+var tvPath = '../txt/TV.txt';
 
-var interestPath = './txt/interests.txt';
+var interestPath = '../txt/interests.txt';
 
 var academiaCat = readFileToArray( academiaPath );
 var gameCat = readFileToArray( gamePath );
@@ -56,21 +58,8 @@ var tvCat = readFileToArray( tvPath );
 var interestList = readFileToArray( interestPath );
 
 function addArrayToFirebase ( firebaseDB, dest, array ) {
-  //for ( var i = 0; i < array.length; i++ ) {
-  //  firebaseDB.ref( dest ).set( array[ i ] );
-  //}
   firebaseDB.ref( dest ).set( array );
 }
-
-/*
-function print ( array ) {
-  for ( var i = 0; i < array.length; i++ ) {
-    console.log( array[ i ] );
-  }
-}
-
-print( musicCat );
-*/
 
 var interestPath = 'Interest';
 

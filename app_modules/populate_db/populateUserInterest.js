@@ -1,5 +1,8 @@
 'use strict';
 
+// Module to populate the "User_Interest" object on the Firebase
+// database with values from the passed arrays.
+// Note: Each array MUST have equal length.
 module.exports = ( firebaseDB, destination, length, userID, category, 
 			subcategory, preference
 		 ) => {

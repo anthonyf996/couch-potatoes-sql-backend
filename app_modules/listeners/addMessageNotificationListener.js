@@ -1,6 +1,6 @@
 'use strict';
 
-var notiEnv = require( './notification_env' );
+var notiEnv = require( '../notification/notification_env' );
 
 module.exports = ( firebaseDB ) => {
   firebaseDB.ref( 'Chat_Message/' ).on( 'child_added', ( snapshot4 ) => {

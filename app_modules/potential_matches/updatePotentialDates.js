@@ -1,6 +1,10 @@
 'use strict';
 
-module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
+module.exports = ( firebaseDB, sqliteEnv, destination, userID ) => {
+  // Limit size of match list to improve performance.
+  var queryLimit = 30;
+
+  // SQL prepared statement parameters
   var params = 	[ 
 		  userID,
 		  userID,
@@ -11,8 +15,13 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
 		  userID,
 		  userID,
 		  userID,
+		  userID,
+		  //userID, UNCOMMENT LATER IF USING AGE FILTER
+		  //userID,
 		  queryLimit
 		];
+
+  // SQL Query
   var query = 
     // Get list of users ordered by most interests in common in descending order
     "SELECT Res.user_id, SUM( NUM_COMMON ) AS NUM_COMMON FROM ( " +
@@ -32,12 +41,33 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     "	UNION ALL " +
     " " +
     "	SELECT DISTINCT T3.user_id, 0 AS NUM_COMMON " +
-    "	FROM User_Interest_Subcategory T3 " +
+    "	FROM User T3 " +
     "   WHERE user_id <> ? " +
     ")  AS Res" +
     " " +
     // Apply filters
-    "WHERE Res.user_id NOT IN " +
+    "WHERE Res.user_id IN  " +
+    " " +
+    // Age filter
+/*  DO NOT USE AGE FILTER UNTIL USERS CAN ENTER MIN_AGE AND MAX_AGE IN SETTINGS
+    "( " +
+    "  SELECT T4.user_id FROM User_Age T4 WHERE  " +
+    "	T4.age < ( SELECT T5.max_age FROM Partner_Preference T5 " +
+    "			WHERE T5.user_id = ? ) " +
+    "	AND " +
+    "	T4.age > ( SELECT T6.min_age FROM Partner_Preference T6 " +
+    "			WHERE T6.user_id = ? ) " +
+    ") " +
+    "AND Res.user_id IN " +
+    " " +
+*/
+    // Gender filter
+    "( " +
+    "  SELECT T7.user_id FROM User T7 WHERE T7.gender IN ( " +
+    "	SELECT T8.gender FROM Partner_Preference_Gender T8 " +
+    "	WHERE T8.user_id = ? ) " +
+    ") " +
+    "AND Res.user_id NOT IN " +
     " " +
     // Like filter
     "( " +
@@ -83,7 +113,10 @@ module.exports = ( firebaseDB, sqlDB, destination, userID, queryLimit ) => {
     "GROUP BY Res.user_id ORDER BY NUM_COMMON DESC " +
     "LIMIT ?; "
 
-  sqlDB.all( query, params, function ( err, rows ) {
+  // Get the list of potential matches for the user corresponding to the
+  // passed user id from the SQL database. Then add this list to the
+  // Firebase database.
+  sqliteEnv.db.all( query, params, function ( err, rows ) {
     if ( err ) {
       throw err;
     }
