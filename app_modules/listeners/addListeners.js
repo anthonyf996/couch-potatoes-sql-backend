@@ -1,35 +1,29 @@
 'use strict';
 
+// Add User listeners
 var addUserListeners = require( './addUserListeners' );
+// Add Partner_Preference listeners
 var addPartnerPrefListeners = require( './addPartnerPrefListeners' );
+// Add Interest listeners
 var addInterestListeners = require( './addInterestListeners' );
+// Add Interest_Subcategory listeners
 var addInterestSubcategoryListeners = require( './addInterestSubcategoryListeners' );
+// Add User_Interest listeners
 var addUserInterestListeners = require( './addUserInterestListeners' );
+// Add Date listeners
 var addDateListeners = require( './addDateListeners' );
+// Add Befriend listeners
 var addBefriendListeners = require( './addBefriendListeners' );
+// Add Like listeners
 var addLikeListeners = require( './addLikeListeners' );
+// Add Dislike listeners
 var addDislikeListeners = require( './addDislikeListeners' );
+// Add Block listeners
 var addBlockListeners = require( './addBlockListeners' );
+// Add Report listeners
 var addReportListeners = require( './addReportListeners' );
 
 module.exports = ( firebaseDB, sqliteEnv ) => {
-/*
-    let queryLimit = 30;
-
-    let sqlQuery = function ( sqliteDB, query, params, printStmt ) {
-      sqliteDB.run( query, params, function ( err ) {
-        if ( err ) {
-          return console.error( err.message );
-        }
-        else if ( printStmt ) {
-          console.log( printStmt );
-        }
-      });
-    };
-
-    sqlQuery( sqliteDB, 'PRAGMA foreign_keys = ON;', [], 'Foreign Keys = ON' );
-*/
-
     // Add User listeners
     addUserListeners( firebaseDB, sqliteEnv );
 

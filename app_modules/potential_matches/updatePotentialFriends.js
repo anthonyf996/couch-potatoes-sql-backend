@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = ( firebaseDB, sqliteEnv, destination, userID ) => {
+  // Limit size of match list to improve performance.
   var queryLimit = 30;
+
+  // SQL prepared statement parameters
   var params = 	[ 
 		  userID,
 		  userID,
@@ -14,6 +17,8 @@ module.exports = ( firebaseDB, sqliteEnv, destination, userID ) => {
 		  userID,
 		  queryLimit
 		];
+
+  // SQL query
   var query = 
     // Get list of users ordered by most interests in common in descending order
     "SELECT Res.user_id, SUM( NUM_COMMON ) AS NUM_COMMON FROM ( " +
@@ -84,6 +89,9 @@ module.exports = ( firebaseDB, sqliteEnv, destination, userID ) => {
     "GROUP BY Res.user_id ORDER BY NUM_COMMON DESC " +
     "LIMIT ?; "
 
+  // Get the list of potential matches for the user corresponding to the
+  // passed user id from the SQL database. Then add this list to the
+  // Firebase database.
   sqliteEnv.db.all( query, params, function ( err, rows ) {
     if ( err ) {
       throw err;
