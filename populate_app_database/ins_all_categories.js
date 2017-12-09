@@ -58,21 +58,8 @@ var tvCat = readFileToArray( tvPath );
 var interestList = readFileToArray( interestPath );
 
 function addArrayToFirebase ( firebaseDB, dest, array ) {
-  //for ( var i = 0; i < array.length; i++ ) {
-  //  firebaseDB.ref( dest ).set( array[ i ] );
-  //}
   firebaseDB.ref( dest ).set( array );
 }
-
-/*
-function print ( array ) {
-  for ( var i = 0; i < array.length; i++ ) {
-    console.log( array[ i ] );
-  }
-}
-
-print( musicCat );
-*/
 
 var interestPath = 'Interest';
 

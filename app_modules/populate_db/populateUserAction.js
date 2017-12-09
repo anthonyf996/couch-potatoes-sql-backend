@@ -1,5 +1,9 @@
 'use strict';
 
+// Module to populate a user action object on the Firebase
+// database, such as the "Date" object, with values from the 
+// passed arrays. 
+// Note: Each array MUST have equal length.
 module.exports = ( firebaseDB, destination, length, user1ID, user2ID, 
 			default_timestamp, reason
 		 ) => {

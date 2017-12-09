@@ -1,5 +1,8 @@
 'use strict';
 
+// Module to populate the "User_Interest" object on the Firebase
+// database with values from the passed arrays.
+// Note: Each array MUST have equal length.
 module.exports = ( firebaseDB, destination, length, userID, email, firstName, 
 			middleName, lastName, birthDate, gender, city, state, 
 			country, bio, latitude, longitude, locked, suspended, profilePic
@@ -27,8 +30,6 @@ module.exports = ( firebaseDB, destination, length, userID, email, firstName,
 			'suspended' : false,
 			'profile_pic' : profilePic[ i ]
 		};
-		//obj[ userID[ i ] ] = obj2;
 		firebaseDB.ref( destination ).child( userID[i] ).set( obj2 );
 	}
-	//firebaseDB.ref( destination ).set( obj );
 }
