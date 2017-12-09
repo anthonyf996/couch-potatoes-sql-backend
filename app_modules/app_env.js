@@ -17,9 +17,7 @@ var getPotatoQ = require( potatoQDir + 'getPotatoQuestion' );
 var addListenersMod = require( listenersDir + 'addListeners' );
 
 module.exports = {
-  syncDB : function ( firebaseDB, sqliteEnv ) {
-    addListenersMod( firebaseDB, sqliteEnv );
-  },
+  syncDB : addListenersMod,
   populateUser : popUser,
   populateUserInterest : popUserInterest,
   populatePartnerPreference : popPartnerPreference,
