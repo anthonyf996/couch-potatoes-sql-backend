@@ -1,5 +1,7 @@
 'use strict';
 
+// Module that reads the passed file into an array and then 
+// returns the array.
 module.exports = ( file ) => {
   var fs = require( 'fs' );
 
