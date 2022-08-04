@@ -11,7 +11,7 @@ const dbPath = './app_database/app.db';
 const cred = 'ADD_YOUR_CREDENTIALS HERE';
 
 // Firebase project URL
-const url = 'https://couch-potatoes-47758.firebaseio.com';
+const url = 'ADD_YOUR_PROJECT_URL_HERE';
 
 // Connect to SQL database
 sqliteEnv.connect( dbPath );
