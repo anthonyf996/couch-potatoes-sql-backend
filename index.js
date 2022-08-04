@@ -8,7 +8,7 @@ const appEnv = require( './app_modules/app_env' );
 const dbPath = './app_database/app.db';
 
 // Firebase project credentials
-const cred = '../../credentials/couch-potatoes-47758-firebase-adminsdk-t7w2b-a91c122945.json';
+const cred = 'ADD_YOUR_CREDENTIALS HERE';
 
 // Firebase project URL
 const url = 'https://couch-potatoes-47758.firebaseio.com';
